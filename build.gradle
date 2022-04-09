@@ -35,3 +35,11 @@ dependencies {
 tasks.named('test') {
   useJUnitPlatform()
 }
+
+jar {
+  manifest {
+    attributes(
+        'Main-Class': 'cz.tix.upce.deployment.SpringDeploymentApplication'
+    )
+  }
+}
